@@ -1,0 +1,40 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="br.com.demomock.DemoMock.controller.View1" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<!--  OData
+				    <List noDataText="Drop list items here" id="__list0" items="{Model>/ProductSet}">
+				    <items>
+				        <ObjectListItem type="Active" title="{Model>Name}" number="{Model>Price}" numberState="{=${Model>Price}>1000 ? 'Error':'Success'}" numberUnit="{Model>CurrencyCode}" id="__item0">
+				            <attributes>
+				                <ObjectAttribute text="attribute text" id="__attribute0"/>
+				            </attributes>
+				            <firstStatus>
+				                <ObjectStatus text="{ parts:[ { path: 'Model>WeightMeasure'}, {path: 'Model>WeightUnit'} ], formatter: '.Formatter.statusText' } " state="{ parts:[ { path: 'Model>WeightMeasure'}, {path: 'Model>WeightUnit'} ], formatter: '.Formatter.statusState' }" id="__status0"/>
+				            </firstStatus>
+				            <secondStatus>
+				                <ObjectStatus text="{Model>WeightMeasure} {Model>WeightUnit}" id="__status1"/>
+				            </secondStatus></ObjectListItem>
+				    </items>
+				    </List>
+				    -->
+				    <List noDataText="Drop list items here" id="__list0" items="{ModelMock>/}">
+				    <items>
+				        <ObjectListItem type="Active" title="{ModelMock>Name}" number="{ModelMock>Price}" numberState="{=${ModelMock>Price}>1000 ? 'Error':'Success'}" numberUnit="{ModelMock>CurrencyCode}" id="__item0">
+				            <attributes>
+				                <ObjectAttribute text="attribute text" id="__attribute0"/>
+				            </attributes>
+				            <firstStatus>
+				                <ObjectStatus text="{ parts:[ { path: 'ModelMock>WeightMeasure'}, {path: 'ModelMock>WeightUnit'} ], formatter: '.Formatter.statusText' } " state="{ parts:[ { path: 'ModelMock>WeightMeasure'}, {path: 'ModelMock>WeightUnit'} ], formatter: '.Formatter.statusState' }" id="__status0"/>
+				            </firstStatus>
+				            <secondStatus>
+				                <ObjectStatus text="{ModelMock>WeightMeasure} {ModelMock>WeightUnit}" id="__status1"/>
+				            </secondStatus></ObjectListItem>
+				    </items>
+				    </List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
